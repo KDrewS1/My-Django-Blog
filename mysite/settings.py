@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+=($5u!%du5(tq(&l5vp)7w#@+0gdy)jnuz!ld=d45sq3(jzme
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kdrews1.pythonanywhere.com']
 
 
 # Application definition
@@ -120,3 +120,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = Path(BASE_DIR / 'static')
+MEDIA_ROOT = Path(BASE_DIR / 'media')
